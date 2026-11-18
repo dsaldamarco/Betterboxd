@@ -9,15 +9,15 @@
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/onboarding.png" width="200" alt="Welcome screen">
-  <img src="docs/screenshots/grid.png" width="200" alt="Watchlist in grid layout">
-  <img src="docs/screenshots/ranking.png" width="200" alt="Ranking">
-  <img src="docs/screenshots/together.png" width="200" alt="Films in common with friends">
+  <img src="docs/screenshots/onboarding-dark.png" width="200" alt="Welcome screen">
+  <img src="docs/screenshots/grid-dark.png" width="200" alt="Watchlist in grid layout">
+  <img src="docs/screenshots/ranking-dark.png" width="200" alt="Ranking">
+  <img src="docs/screenshots/together-dark.png" width="200" alt="Films in common with friends">
 </p>
 <p align="center">
-  <img src="docs/screenshots/random.png" width="200" alt="Film picked at random">
-  <img src="docs/screenshots/detail-light.png" width="200" alt="Film details in light mode">
-  <img src="docs/screenshots/detail-dark.png" width="200" alt="Film details in dark mode">
+  <img src="docs/screenshots/random-dark.png" width="200" alt="Film picked at random">
+  <img src="docs/screenshots/yiyi-light.png" width="200" alt="Film details in light mode">
+  <img src="docs/screenshots/yiyi-dark.png" width="200" alt="Film details in dark mode">
 </p>
 
 ## Features
