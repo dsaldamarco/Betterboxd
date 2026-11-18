@@ -17,7 +17,7 @@ struct OnboardingView: View {
                 Spacer()
 
                 VStack(spacing: 12) {
-                    Text(verbatim: "Smarterboxd")
+                    Text(verbatim: "Betterboxd")
                         .font(.custom("SharpGrotesk-SemiBold20", size: 44, relativeTo: .largeTitle))
                     Text("Your Letterboxd watchlist,\nsorted, ranked and shuffled.")
                         .font(.title3)

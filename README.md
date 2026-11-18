@@ -1,85 +1,91 @@
-# Smarterboxd
-
-Un'app iOS per la tua watchlist di [Letterboxd](https://letterboxd.com): scrivi il tuo nome utente e puoi sfogliarla, metterla in ordine, creare le tue classifiche dei film da vedere, scoprire quali film hai in comune con gli amici e lasciare al caso la scelta di stasera.
-
 <p align="center">
-  <img src="docs/screenshots/onboarding.png" width="200" alt="Schermata iniziale">
-  <img src="docs/screenshots/grid.png" width="200" alt="Watchlist a griglia">
-  <img src="docs/screenshots/ranking.png" width="200" alt="Classifica">
-  <img src="docs/screenshots/together.png" width="200" alt="Film in comune con un amico">
-</p>
-<p align="center">
-  <img src="docs/screenshots/random.png" width="200" alt="Film scelto a caso">
-  <img src="docs/screenshots/detail.png" width="200" alt="Dettaglio film">
-  <img src="docs/screenshots/detail-dark.png" width="200" alt="Dettaglio film in modalità scura">
+  <img src="docs/logo.png" width="128" alt="Betterboxd logo">
 </p>
 
-## Cosa fa
+<h1 align="center">Betterboxd</h1>
 
-- **Watchlist dal nome utente.** Scrivi il tuo nome utente Letterboxd (oppure `@nome` o il link al profilo) e l'app scarica tutta la watchlist. Si aggiorna da sola quando la riapri, oppure trascinando la lista verso il basso.
-- **Griglia o lista**, con cinque ordinamenti: aggiunti di recente o per primi, anno di uscita (dal più recente o dal meno recente), titolo.
-- **Più classifiche.** Crea tutte le liste che vuoi (per esempio «Con gli amici» o «Serata di coppia»), segna i film con la stella e riordinali trascinandoli.
-- **Insieme.** Aggiungi il nome utente di uno o più amici e scopri quali film avete in comune nelle watchlist: ideale per organizzare una serata film. Gli amici restano salvati e ogni volta scegli chi c'è. Con tre o più persone mostra anche i film che ha quasi tutto il gruppo. Il dado in alto estrae a sorte uno dei film in comune, con la stessa animazione di Random.
-- **Random.** Non sai cosa guardare? L'app fa scorrere i titoli ed estrae un film da tutta la watchlist o da una delle tue liste.
-- **Dettagli del film**: locandina, immagine di sfondo, regista, durata, generi, voto e trama nella lingua dell'app (in inglese se manca la traduzione).
-- **Ricerca** per titolo o anno, dalla lente in alto nella Watchlist.
-- **Nascondi** i film che non ti interessano più; puoi ripristinarli dalle impostazioni.
-- **Importazione CSV** come alternativa al nome utente.
+<p align="center">
+  An iOS app for your <a href="https://letterboxd.com">Letterboxd</a> watchlist: enter your username to browse it, sort it, build your own rankings of films to watch, find the films you have in common with friends and let chance pick tonight's movie.
+</p>
 
-L'app è in **inglese e italiano** e segue la lingua del sistema. Lo stile è quello nativo di iOS 26, con l'effetto vetro (Liquid Glass) su tab bar, barre e pulsanti, e supporta la modalità scura. La tab bar si rimpicciolisce mentre scorri verso il basso e si riapre appena torni a scorrere verso l'alto.
+<p align="center">
+  <img src="docs/screenshots/onboarding.png" width="200" alt="Welcome screen">
+  <img src="docs/screenshots/grid.png" width="200" alt="Watchlist in grid layout">
+  <img src="docs/screenshots/ranking.png" width="200" alt="Ranking">
+  <img src="docs/screenshots/together.png" width="200" alt="Films in common with friends">
+</p>
+<p align="center">
+  <img src="docs/screenshots/random.png" width="200" alt="Film picked at random">
+  <img src="docs/screenshots/detail-light.png" width="200" alt="Film details in light mode">
+  <img src="docs/screenshots/detail-dark.png" width="200" alt="Film details in dark mode">
+</p>
 
-## Come legge la watchlist
+## Features
 
-Letterboxd ha un'API, ma non è pubblica: l'accesso va richiesto e viene concesso di rado. Smarterboxd legge quindi la pagina pubblica della watchlist (`letterboxd.com/<utente>/watchlist/`), la stessa che vedi dal browser. Ne derivano due limiti:
+- **Watchlist from your username.** Enter your Letterboxd username (or `@name`, or your profile link) and the app downloads your whole watchlist. It refreshes on its own when you reopen the app, or when you pull down on the list.
+- **Grid or list**, with five sort orders: recently added, first added, release date (newest or oldest first) and title.
+- **Multiple rankings.** Create as many lists as you like (for example "With friends" or "Date night"), star films to add them and drag them into order.
+- **Together.** Add the usernames of one or more friends and see which films you all have in your watchlists, which makes planning a movie night easy. Friends stay saved and each time you pick who's in. With three or more people it also shows the films that almost everyone has. The dice at the top picks one of the shared films at random, with the same animation as Random.
+- **Random.** Can't decide what to watch? The app spins through the titles and picks a film from your whole watchlist or from one of your lists.
+- **Film details**: poster, backdrop, director, runtime, genres, rating and synopsis in the app's language (in English when no translation is available).
+- **Search** by title or year, from the magnifying glass at the top of the Watchlist.
+- **Hide** films you're no longer interested in; you can restore them in Settings.
+- **CSV import** as an alternative to your username.
 
-- **La watchlist deve essere pubblica**, anche quella degli amici in «Insieme».
-- **Se Letterboxd cambia la struttura delle sue pagine**, o blocca le richieste, il caricamento dal nome utente può smettere di funzionare finché l'app non viene aggiornata.
+The app is available in **English and Italian** and follows the system language. It uses the native iOS 26 look, with Liquid Glass on the tab bar, toolbars and buttons, and supports dark mode. The tab bar shrinks as you scroll down and comes back as soon as you scroll up.
 
-In questi casi puoi usare il file CSV: su Letterboxd vai in **Impostazioni › Dati › Esporta i tuoi dati**, estrai lo ZIP e importa `watchlist.csv` dall'app.
+## How it reads your watchlist
 
-Classifiche e film nascosti vengono salvati sul telefono e restano anche se passi dal CSV al nome utente o viceversa.
+Letterboxd has an API, but it isn't public: access must be requested and is rarely granted. Betterboxd therefore reads the public watchlist page (`letterboxd.com/<username>/watchlist/`), the same one you see in a browser. This has two consequences:
 
-## Requisiti
+- **Your watchlist must be public**, and so must your friends' in Together.
+- **If Letterboxd changes the structure of its pages** or blocks requests, loading by username may stop working until the app is updated.
 
-- Xcode 26 o successivo
-- iOS 26 o successivo
-- Una chiave API di [TMDb](https://www.themoviedb.org) (gratuita), per locandine e dettagli
+In that case you can use the CSV file: on Letterboxd go to **Settings › Data › Export your data**, unzip the archive and import `watchlist.csv` from the app.
 
-## Installazione
+Rankings and hidden films are stored on your phone and are kept when you switch between CSV and username.
 
-1. Clona il repository:
+## Requirements
+
+- Xcode 26 or later
+- iOS 26 or later
+- A free [TMDb](https://www.themoviedb.org) API key, for posters and film details
+
+## Installation
+
+1. Clone the repository:
    ```sh
    git clone https://github.com/dsaldamarco/Smarterboxd.git
    cd Smarterboxd
    ```
-2. Crea il file con la tua chiave TMDb partendo dall'esempio:
+2. Create the file for your TMDb key from the example:
    ```sh
    cp Secrets.example.xcconfig Secrets.xcconfig
    ```
-   Apri `Secrets.xcconfig` e incolla la chiave al posto di `INCOLLA_QUI_LA_TUA_CHIAVE`. La trovi su TMDb in **Impostazioni › API**: è la "Chiave API" di 32 caratteri, non il token di accesso. Il file è escluso da git, quindi la chiave non finisce nel repository.
-3. Apri `Smarterboxd.xcodeproj` in Xcode e avvia l'app.
+   Open `Secrets.xcconfig` and paste your key in place of `INCOLLA_QUI_LA_TUA_CHIAVE`. You'll find it on TMDb under **Settings › API**: it's the 32-character "API Key", not the access token. The file is ignored by git, so your key never ends up in the repository.
+3. Open `Smarterboxd.xcodeproj` in Xcode and run the app.
 
-Senza chiave l'app funziona lo stesso, ma senza locandine né dettagli dei film.
+Without a key the app still works, but without posters or film details.
 
-## Struttura del progetto
+## Project structure
 
-| File | Contenuto |
+| File | Contents |
 | --- | --- |
-| `LetterboxdService.swift` | Scarica e interpreta le pagine della watchlist |
-| `CSVParser.swift` | Legge il `watchlist.csv` esportato da Letterboxd |
-| `TMDbService.swift` | Locandine e dettagli da TMDb, salvati sul telefono |
-| `WatchlistStore.swift` | Stato dell'app: film, classifiche, film nascosti, account |
-| `MovieNightView.swift` | «Insieme»: confronto tra le watchlist di più persone |
-| `ShuffleView.swift` | Estrazione animata, usata da Random e da Insieme |
-| `Localizable.xcstrings` | Testi dell'app in inglese e italiano |
-| `*View.swift` | Le altre schermate in SwiftUI |
+| `LetterboxdService.swift` | Downloads and parses the watchlist pages |
+| `CSVParser.swift` | Reads the `watchlist.csv` exported from Letterboxd |
+| `TMDbService.swift` | Posters and details from TMDb, cached on the device |
+| `WatchlistStore.swift` | App state: films, rankings, hidden films, account |
+| `MovieNightView.swift` | Together: compares the watchlists of several people |
+| `ShuffleView.swift` | Animated random pick, used by Random and Together |
+| `Localizable.xcstrings` | App strings in English and Italian |
+| `*View.swift` | The other SwiftUI screens |
 
-## Crediti
+## Credits
 
-Questo prodotto usa l'API di TMDb ma non è approvato né certificato da TMDb.
+This product uses the TMDb API but is not endorsed or certified by TMDb.
 
-Smarterboxd è un progetto indipendente e non è affiliato a Letterboxd.
+Betterboxd is an independent project and is not affiliated with Letterboxd.
 
-## Licenza
+## License
 
-Distribuito con licenza [MIT](LICENSE).
+Released under the [MIT](LICENSE) license.

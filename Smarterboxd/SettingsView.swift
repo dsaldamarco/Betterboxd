@@ -60,7 +60,7 @@ struct SettingsView: View {
 
                 Section {
                 } footer: {
-                    Text("Posters, synopses and credits provided by TMDb. Smarterboxd is not affiliated with Letterboxd.")
+                    Text("Posters, synopses and credits provided by TMDb. Betterboxd is not affiliated with Letterboxd.")
                         .frame(maxWidth: .infinity)
                         .multilineTextAlignment(.center)
                 }

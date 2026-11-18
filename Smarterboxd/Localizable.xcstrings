@@ -705,12 +705,12 @@
         }
       }
     },
-    "Posters, synopses and credits provided by TMDb. Smarterboxd is not affiliated with Letterboxd.": {
+    "Posters, synopses and credits provided by TMDb. Betterboxd is not affiliated with Letterboxd.": {
       "localizations": {
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Locandine, trame e crediti forniti da TMDb. Smarterboxd non è affiliata a Letterboxd."
+            "value": "Locandine, trame e crediti forniti da TMDb. Betterboxd non è affiliata a Letterboxd."
           }
         }
       }
