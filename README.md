@@ -55,8 +55,8 @@ Rankings and hidden films are stored on your phone and are kept when you switch 
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/dsaldamarco/Smarterboxd.git
-   cd Smarterboxd
+   git clone https://github.com/dsaldamarco/Betterboxd.git
+   cd Betterboxd
    ```
 2. Create the file for your TMDb key from the example:
    ```sh
